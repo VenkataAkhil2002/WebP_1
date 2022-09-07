@@ -2,4 +2,14 @@
 {
     background-color: black;
     color: white;
+    
+}
+.ahover{
+    padding: 10px 8px;
+}
+.color_bg{
+    background-color: rgb(140, 132, 132);
+}
+.main{
+    margin-top: 52px;
 }
