@@ -1,3 +1,4 @@
+
 .ahover:hover
 {
     background-color: black;
@@ -8,8 +9,14 @@
     padding: 10px 8px;
 }
 .color_bg{
-    background-color: rgb(140, 132, 132);
+    background-color: rgb(204, 133, 133);
 }
 .main{
-    margin-top: 52px;
+    margin-top: 60px;
+    padding-top: 300px;
+    text-align: center;
+    font-family: Lucida;
+}
+.shadow{
+    border-radius:5px;
 }
