@@ -1,44 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+  <style>
+    body {
+      background-color: #eee1d4;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .contact-form-wrapper {
+      padding: 100px 0;
+    }
+
+    .contact-form {
+      padding: 30px 40px;
+      background-color: #ffffff;
+      border-radius: 12px;
+      max-width: 400px;
+    }
+
+    .contact-form textarea {
+      resize: none;
+    }
+
+    .contact-form .form-input,
+    .form-text-area {
+      background-color: #f0f4f5;
+      height: 50px;
+      padding-left: 16px;
+    }
+
+    .contact-form .form-text-area {
+      background-color: #f0f4f5;
+      height: auto;
+      padding-left: 16px;
+    }
+
+    .contact-form .form-control::placeholder {
+      color: #aeb4b9;
+      font-weight: 500;
+      opacity: 1;
+    }
+
+    .contact-form .form-control:-ms-input-placeholder {
+      color: #aeb4b9;
+      font-weight: 500;
+    }
+
+    .contact-form .form-control::-ms-input-placeholder {
+      color: #aeb4b9;
+      font-weight: 500;
+    }
+
+    .contact-form .form-control:focus {
+      border-color: #f33fb0;
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.07), 0 0 8px #f33fb0;
+    }
+
+    .contact-form .title {
+      text-align: center;
+      font-size: 24px;
+      font-weight: 500;
+    }
+
+    .contact-form .description {
+      color: #aeb4b9;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .contact-form .submit-button-wrapper {
+      text-align: center;
+    }
+
+    .contact-form .submit-button-wrapper input {
+      border: none;
+      border-radius: 4px;
+      background-color: #f23292;
+      color: white;
+      text-transform: uppercase;
+      padding: 10px 60px;
+      font-weight: 500;
+      letter-spacing: 2px;
+    }
+
+    .contact-form .submit-button-wrapper input:hover {
+      background-color: #d30069;
+    }
+
+    .card {
+      transition: transform 0.2s ease;
+      box-shadow: 0 4px 6px 0 rgba(22, 22, 26, 0.18);
+      border-radius: 0;
+      border: 0;
+      margin-bottom: 1.5em;
+    }
+
+    .card:hover {
+      transform: scale(1.1);
+    }
+  </style>
+  <title>Contact</title>
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light py-0 mt-2 fixed-top">
-        <div class="container-fluid color_bg">
-          <div class="logo">
-            <img src="logo-new.png" width="145" alt="Logo">
-          </div>
-          <div class="collapse navbar-collapse px-10" id="navbarRightAlignExample">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item px-2">
-                <a class="nav-link ahover" aria-current="page" href="home.html">Home</a>
-              </li>
-              <li class="nav-item px-2">
-                <a class="nav-link ahover" href="members.html">Members</a>
-              </li>
-              <li class="nav-item px-2">
-                <a class="nav-link ahover" href="resources.html">Resources</a>
-              </li>
-              <li class="nav-item px-2">
-                <a class="nav-link ahover" href="contact.html">Contact</a>
-              </li>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light py-0 fixed-top">
+    <div class="container-fluid color_bg">
+      <div class="logo">
+        <a href="home.html">
+          <img src="./images/logo-new.png" width="145" alt="Logo">
+        </a>
+      </div>
+      <div class="collapse navbar-collapse px-10" id="navbarRightAlignExample">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item px-2">
+            <a class="nav-link ahover" aria-current="page" href="home.html">Home</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link ahover" href="members.html">Members</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link ahover" href="resources.html">Resources</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link ahover" href="contact.html">Contact</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  
+  
+  <div div class="mt-5" style="padding-top:150px">
+    <!-- write code here -->
+    <div>
+      <div class="row">
+        <div class="col-4" align="center">
+          <div class="card shadow" style="width: 18rem;">
+            <img class="card-img-top img-thumbnail rounded" height="250px" src="./images/coder-2.jpg"
+              alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Vishnu</h5>
+              <p class="card-text">CSE, Final year, NIT calicut
+              </p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Roll: B190429CS</li>
+              <li class="list-group-item">Phone: 6309829376</li>
+              <li class="list-group-item">vishnuvardhan_b190429cs@nitc.ac.in</li>
             </ul>
-    
           </div>
         </div>
-      </nav>
-    
-      <div class="mt-5">
-        <!-- write code here -->
-        <h1>this is contacts</h1>
+        <div class="col-4" align="center">
+          <div class="card shadow" style="width: 18rem;">
+            <img class="card-img-top img-thumbnail rounded" height="250px" src="./images/coder.jpg"
+              alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Ambati Sathwik</h5>
+              <p class="card-text">CSE, Final year, NIT calicut
+              </p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Roll: B190500CS</li>
+              <li class="list-group-item">Phone: 8688143191</li>
+              <li class="list-group-item">ambatisathwil2311@gmail.com</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-4" align="center">
+          <div class="card shadow" style="width: 18rem;">
+            <img class="card-img-top img-thumbnail rounded" height="250px" src="./images/coder-3.jpg"
+              alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Venkata Akhil</h5>
+              <p class="card-text">CSE, Final year, NIT calicut
+              </p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Roll: B190157CS</li>
+              <li class="list-group-item">Phone: 9959607397</li>
+              <li class="list-group-item">venkataakhil2002@gmail.com</li>
+            </ul>
+          </div>
+        </div>
       </div>
-    
+    </div>
+  </div>
+
+
+
 </body>
+
 </html>
