@@ -19,12 +19,13 @@
     text-align: center;
     font-family: Lucida;
 }
+
 .shadow{
     border-radius:5px;
 }
 .main-text{
     color: #d6d5d4;
-    margin-top: 300px;
+    margin-top: 200px;
     margin-left: 20px;
     font-style: italic;
     font-family: Indie Flower;
@@ -33,3 +34,11 @@
     font-size: 35px;
 }
 
+.button-group{
+    margin-left: 20px;
+}
+.btn-ani:hover{
+    background-color: #d8ad83;
+    color: #fff;
+    border: 1px solid #d8ad83;
+}
